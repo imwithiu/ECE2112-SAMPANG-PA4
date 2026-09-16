@@ -12,7 +12,7 @@ This repository contains Programming Assignment 4 for the course **ECE 2112: Adv
 **Objectives:**
 
 By the end of this activity, students should be able to:
-1. load a CSV dataset into a Pandas DataFrame;
+1. load an excel dataset into a Pandas DataFrame;
 2. select rows and columns using positional and label-based indexing;
 3. filter records using conditions on a DataFrame column; and
 4. extract a well-defined subset of data without changing the source data.
@@ -212,15 +212,7 @@ The figure contains three separate bar charts:
 
 ## Average Column Preparation
 
-The assignment requires an `Average` column, while the supplied dataset used for the notebook does not contain one. The notebook therefore creates a copy of the original DataFrame and calculates Average from the four subject scores.
-
-The copy is created using:
-
-```python
-df = board.copy()
-```
-
-The Average column is then calculated using:
+The Average column is calculated using:
 
 ```python
 df['Average'] = df[['Math', 'Electronics', 'GEAS', 'Communication']].mean(axis=1)
@@ -237,9 +229,6 @@ selects the four subject-score columns.
 The `.mean(axis=1)` operation calculates the mean across the columns for each student. `axis=1` means that the calculation is performed row by row.
 
 The resulting value is stored in the new `Average` column.
-
-Using `board.copy()` before creating the column keeps the original DataFrame unchanged, consistent with the assignment instruction.
-
 
 ## Interpretation
 
