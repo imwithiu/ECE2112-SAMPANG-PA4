@@ -12,7 +12,7 @@ This repository contains Programming Assignment 4 for the course **ECE 2112: Adv
 **Objectives:**
 
 By the end of this activity, students should be able to:
-1. load an excel dataset into a Pandas DataFrame;
+1. load an XLSX dataset into a Pandas DataFrame;
 2. select rows and columns using positional and label-based indexing;
 3. filter records using conditions on a DataFrame column; and
 4. extract a well-defined subset of data without changing the source data.
